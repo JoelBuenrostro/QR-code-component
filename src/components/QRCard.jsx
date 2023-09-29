@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import QRImageDefault from '../assets/image-qr-code.png';
 
 const QRImage = ({ src }) => (
-  <img src={src} className="rounded-xl w-full h-[260px] text-center select-none" alt="QR Code" />
+  <img src={src} className="rounded-xl w-[288px] h-[288px] text-center select-none" alt="QR Code" />
 );
 
 QRImage.propTypes = {
@@ -14,7 +14,7 @@ const CardText = ({ title, description }) => (
     <h1 className="font-bold text-[22px] text-center text-light-dark-blue my-[16px] leading-[120%]">
       {title}
     </h1>
-    <span className="text-base text-center text-light-blue-gray">
+    <span className="text-[15px] text-center text-light-blue-gray">
       {description}
     </span>
   </div>
@@ -26,7 +26,7 @@ CardText.propTypes = {
 };
 
 const QRCard = ({ QR = QRImageDefault, title, description, className }) => (
-  <div className={`flex flex-col bg-white rounded-3xl p-[16px] w-[300px] h-[460px] my-0 mx-auto ${className}`}>
+  <div className={`flex flex-col bg-white rounded-[20px] p-[16px] w-[320px] h-[497px] my-[152px] mx-auto ${className}`}>
     <QRImage src={QR} />
     <CardText title={title} description={description} />
   </div>
